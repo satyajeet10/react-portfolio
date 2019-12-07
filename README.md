@@ -47,17 +47,7 @@ We can't assume that Heroku will have PORT 8080 available. We need set `process.
 We should end up with something like this
 ![PORT Images](public/images/port.png);
 
-
 #### Step 2
-> `server.js`
-
-Heroku's going to generate an environment variable called `MONGODB_URI` for us to connect to mlab (MongoDB). In order to utilize this variable, we need to set our `mongoose.connect` with that variable. 
-
-It should look like this
-![MONGODB_URI](public/images/mongodb_uri.png);
-
-
-#### Step 3
 > `server.js`
 
 Once our app is on Heroku, we need to send the static build files on our server so that Heroku can serve it. 
